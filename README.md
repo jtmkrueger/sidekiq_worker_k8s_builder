@@ -10,7 +10,7 @@ The goal is to have each sidekiq queue be it's own independently scalable replic
 
 ## Setup
 
-* wget the file to where you're building your workers. This is part of a gitlab pipeline for me, so I'm running this command on in the dockerfile to spin up the runner.
+* wget the file to where you're building your workers. This is part of a gitlab CI pipeline for me, so I'm running this command in the dockerfile to spin up the runner.
 
   * `wget https://raw.githubusercontent.com/jtmkrueger/sidekiq_worker_k8s_builder/master/worker_builder.rb`
 
