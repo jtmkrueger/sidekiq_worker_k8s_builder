@@ -1,7 +1,12 @@
 Sidekiq Worker K8s Builder
 --------------------------
 
-A script to generate independent sidekiq worker deployment files for all queue namespaces. I'm using it for Rails projects, but it can be adapted for other things as well.
+A script to generate independent sidekiq worker deployment files for all queue namespaces. I'm using it for Rails projects, but it can be adapted for other things as well. Here's the network model we're trying to create:
+
+![sidekiq independent stack](network_diagram.png)
+
+
+The goal is to have each sidekiq queue be it's own independently scalable replicaset so we can autoscale on these queue metrics.
 
 ## Setup
 
