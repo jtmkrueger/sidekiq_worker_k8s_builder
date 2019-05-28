@@ -25,7 +25,7 @@ queues:
     workers: 1
 ```
 
-* to run the file, just use ruby: `ruby worker_builder.rb`
+* run the file with `./worker_builder.rb` or get it put in your `PATH` so you can execute it wherever.
 
 ## TODO
 
